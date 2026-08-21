@@ -49,7 +49,45 @@
                     <li>400g de queijo mussarela</li>
                 </ul>
 
-                <a href="#">Ver receita completa →</a>
+                <p><a href="#">Ver receita completa →</a></p>
+
+                <!-- Área de Interação: Likes e Dislikes -->
+                <section class="interacao-likes">
+                    <button type="button">👍 Curtir (<span>42</span>)</button>
+                    <button type="button">👎 Não curtir (<span>3</span>)</button>
+                </section>
+
+                <!-- Seção de Comentários -->
+                <section class="comentarios">
+                    <h4>Comentários (2)</h4>
+
+                    <!-- Lista de Comentários Existentes -->
+                    <div class="lista-comentarios">
+                        <article class="comentario">
+                            <p><strong>Maria Silva:</strong> <em>em 20/08/2026</em></p>
+                            <p>Fiz no almoço de domingo e a família inteira amou! Receita perfeita.</p>
+                        </article>
+                        
+                        <article class="comentario">
+                            <p><strong>João Paulo:</strong> <em>em 21/08/2026</em></p>
+                            <p>Dá para substituir o queijo mussarela por prato?</p>
+                        </article>
+                    </div>
+
+                    <!-- Formulário para Novo Comentário -->
+                    <form action="#" method="POST" class="form-comentario">
+                        <h5>Deixe seu comentário:</h5>
+                        <div>
+                            <label for="nome-post1">Nome:</label><br>
+                            <input type="text" id="nome-post1" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div>
+                            <label for="comentario-post1">Comentário:</label><br>
+                            <textarea id="comentario-post1" name="comentario" rows="3" placeholder="Escreva sua opinião ou dúvida..." required></textarea>
+                        </div>
+                        <button type="submit">Enviar Comentário</button>
+                    </form>
+                </section>
             </article>
 
             <hr>
@@ -68,7 +106,40 @@
                 <h4>Tempo de Preparo:</h4>
                 <p><strong>Preparo:</strong> 15 min | <strong>Forno:</strong> 40 min</p>
 
-                <a href="#">Ver receita completa →</a>
+                <p><a href="#">Ver receita completa →</a></p>
+
+                <!-- Área de Interação: Likes e Dislikes -->
+                <section class="interacao-likes">
+                    <button type="button">👍 Curtir (<span>89</span>)</button>
+                    <button type="button">👎 Não curtir (<span>1</span>)</button>
+                </section>
+
+                <!-- Seção de Comentários -->
+                <section class="comentarios">
+                    <h4>Comentários (1)</h4>
+
+                    <!-- Lista de Comentários Existentes -->
+                    <div class="lista-comentarios">
+                        <article class="comentario">
+                            <p><strong>Carla Dias:</strong> <em>em 19/08/2026</em></p>
+                            <p>A casquinha de chocolate realmente fica crocante! Ficou maravilhoso.</p>
+                        </article>
+                    </div>
+
+                    <!-- Formulário para Novo Comentário -->
+                    <form action="#" method="POST" class="form-comentario">
+                        <h5>Deixe seu comentário:</h5>
+                        <div>
+                            <label for="nome-post2">Nome:</label><br>
+                            <input type="text" id="nome-post2" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div>
+                            <label for="comentario-post2">Comentário:</label><br>
+                            <textarea id="comentario-post2" name="comentario" rows="3" placeholder="Escreva sua opinião ou dúvida..." required></textarea>
+                        </div>
+                        <button type="submit">Enviar Comentário</button>
+                    </form>
+                </section>
             </article>
         </section>
 
