@@ -3,183 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor & Arte - Receitas e Bolos</title>
-    <style>
-        :root {
-            --primary-color: #e74c3c;
-            --secondary-color: #f39c12;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --text-color: #2c3e50;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        nav {
-            background-color: #c0392b;
-            text-align: center;
-            padding: 0.8rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .recipe-card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease;
-        }
-
-        .recipe-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .recipe-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .tag {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .card-content h2 {
-            margin: 0.8rem 0 0.5rem;
-            font-size: 1.4rem;
-        }
-
-        .card-content p {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 3rem;
-        }
-    </style>
+    <title>Sabor & Arte - Blog de Receitas e Bolos</title>
 </head>
 <body>
 
+    <!-- Cabeçalho Principal -->
     <header>
         <h1>Sabor & Arte</h1>
-        <p>As melhores receitas de comidas caseiras e bolos incríveis!</p>
+        <p>Receitas práticas, comidas caseiras e os melhores bolos!</p>
+        
+        <!-- Navegação Principal -->
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#receitas">Comidas</a></li>
+                <li><a href="#bolos">Bolos & Doces</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Bolos</a>
-        <a href="#">Salgados</a>
-        <a href="#">Contato</a>
-    </nav>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção de Destaque / Feed de Posts -->
+        <section id="posts">
+            <h2>Últimas Receitas</h2>
 
-    <div class="container">
-        <main class="posts-grid">
+            <!-- Post 1: Receita Salgada -->
+            <article>
+                <header>
+                    <h3>Lasanha Clássica à Bolonhesa</h3>
+                    <p>Publicado em <time datetime="2026-08-20">20 de Agosto de 2026</time> por <strong>Chef Ana</strong></p>
+                </header>
+                
+                <img src="https://via.placeholder.com/600x350" alt="Fatia de lasanha à bolonhesa bem recheada">
+                
+                <p>Uma receita tradicional de família com molho caseiro encorpado e muito queijo derretido. Ideal para o almoço de domingo!</p>
 
-            <!-- Receita 1 -->
-            <article class="recipe-card">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Bolo de Chocolate">
-                <div class="card-content">
-                    <span class="tag">Bolos</span>
-                    <h2>Bolo de Chocolate Vulcão</h2>
-                    <p>Uma massa fofinha coberta com muito brigadeiro cremoso caindo pelas laterais. Perfeito para o café da tarde.</p>
-                    <a href="#" class="btn">Ver Receita</a>
-                </div>
+                <h4>Ingredientes Rápidos:</h4>
+                <ul>
+                    <li>500g de massa para lasanha</li>
+                    <li>600g de carne moída</li>
+                    <li>2 molhos de tomate</li>
+                    <li>400g de queijo mussarela</li>
+                </ul>
+
+                <a href="#">Ver receita completa →</a>
             </article>
 
-            <!-- Receita 2 -->
-            <article class="recipe-card">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500" alt="Prato de Comida">
-                <div class="card-content">
-                    <span class="tag">Pratos Principais</span>
-                    <h2>Lasanha Clássica à Bolonhesa</h2>
-                    <p>Massa artesanal, bastante queijo derretido e um molho de carne bem encorpado e temperado.</p>
-                    <a href="#" class="btn">Ver Receita</a>
-                </div>
+            <hr>
+
+            <!-- Post 2: Bolo -->
+            <article>
+                <header>
+                    <h3>Bolo de Cenoura com Cobertura Vulcão de Chocolate</h3>
+                    <p>Publicado em <time datetime="2026-08-18">18 de Agosto de 2026</time> por <strong>Chef Ana</strong></p>
+                </header>
+                
+                <img src="https://via.placeholder.com/600x350" alt="Bolo de cenoura com cobertura fofinha de chocolate">
+                
+                <p>O segredo para a massa ficar extremamente fofinha e a calda com aquela casquinha crocante inesquecível.</p>
+
+                <h4>Tempo de Preparo:</h4>
+                <p><strong>Preparo:</strong> 15 min | <strong>Forno:</strong> 40 min</p>
+
+                <a href="#">Ver receita completa →</a>
             </article>
+        </section>
 
-            <!-- Receita 3 -->
-            <article class="recipe-card">
-                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=500" alt="Bolo de Cenoura">
-                <div class="card-content">
-                    <span class="tag">Bolos</span>
-                    <h2>Bolo de Cenoura Fofinho</h2>
-                    <p>A receita tradicional que nunca falha, acompanhada daquela casca durinha de chocolate por cima.</p>
-                    <a href="#" class="btn">Ver Receita</a>
-                </div>
-            </article>
+        <!-- Barra Lateral (Sidebar) -->
+        <aside>
+            <section>
+                <h3>Sobre a Autora</h3>
+                <img src="https://via.placeholder.com/150" alt="Foto da autora do blog">
+                <p>Oi! Sou a Ana, apaixonada por culinária caseira e confeitaria. Aqui compartilho minhas melhores criações!</p>
+            </section>
 
-        </main>
-    </div>
+            <section>
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Bolos Fofinhos (12)</a></li>
+                    <li><a href="#">Massas e Molhos (8)</a></li>
+                    <li><a href="#">Sobremesas Fáceis (15)</a></li>
+                    <li><a href="#">Pratos Rápido em 20min (10)</a></li>
+                </ul>
+            </section>
 
+            <section>
+                <h3>Newsletter</h3>
+                <form action="#" method="POST">
+                    <label for="email">Receba receitas semanais:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2026 Sabor & Arte - Desenvolvido para GitHub Pages</p>
+        <p>&copy; 2026 Sabor & Arte Blog. Todos os direitos reservados.</p>
     </footer>
 
 </body>
